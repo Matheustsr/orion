@@ -17,6 +17,6 @@ mongoose.connect('mongodb://db:27017/orion', { useMongoCluente: true });
 
 routes(app);
 
-app.listen(3004, () => {
+app.listen(3000, () => {
     console.log('Its on, baby!');
 });

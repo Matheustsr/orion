@@ -12,8 +12,10 @@ services:
         command: sh -c "npm run dev"
         container_name: orion
         ports:
-            - 3004:3000
+            - "3005:3000"
             #YOUR_LOCAL_MACHINE_PORT:DOCKER_CONTAINER_PORT
+        environment:
+            PORT: 3000
         volumes:
             - .:/src
         depends_on:
