@@ -1,0 +1,21 @@
+version: '3'
+# Version about docker compose, bro!
+
+services:
+    db:
+        image: 'mongo:latest'
+        ports:
+            - '27017:27017'
+    app:
+        build: .
+        restart: always
+        container_name: orion
+        ports:
+            - 3004:3000
+            #YOUR_LOCAL_MACHINE_PORT:DOCKER_CONTAINER_PORT
+        volumes:
+            - .:/src
+        depends_on:
+            - db
+
+# I really really need explain ALL? Just read the instructions!
