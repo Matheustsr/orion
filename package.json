@@ -6,7 +6,8 @@
   "author": "Matheus Vieira <matheustsr@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon --legacy-watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dependencies": {
       "express": "^4.17.1"
     },
@@ -26,11 +27,10 @@
     "sucrase": "^3.18.2"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
     "express": "^4.17.1",
-    "js": "^0.1.0",
     "mongoose": "^5.13.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.8.2"
   }
 }

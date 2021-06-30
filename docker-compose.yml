@@ -9,6 +9,7 @@ services:
     app:
         build: .
         restart: always
+        command: sh -c "npm run dev"
         container_name: orion
         ports:
             - 3004:3000
