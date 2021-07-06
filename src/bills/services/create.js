@@ -10,5 +10,6 @@ export default (req, res) => {
         })
         .catch((err) => {
             res.status(500).json({ status: false });
+            res.status(500).json({ status: false });
         });
 };
